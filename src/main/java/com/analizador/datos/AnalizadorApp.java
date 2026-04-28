@@ -31,7 +31,7 @@ public class AnalizadorApp {
 		
 		
 		Consumer<Cliente> miReporte = c -> {
-			String nombreFinal = c.getNombre().orElse("Nombre no regisrado");
+			String nombreFinal = c.getNombre().orElse("Sin Registro");
 			String etiquetaFinal = String.join(" ", c.getEtiquetas());
 			System.out.println("ID: " + c.getId() + " | " + nombreFinal + " - " + etiquetaFinal);
 		};
